@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="app.test"
+    errors="1" failures="0" hostname="" id="" package="app.test" skipped="0"
+    tests="1" time="0.006000" timestamp="Mon, 28 Jan 2019 22:56:06 GMT">
+  
+    <testcase name="Wait for the app open" classname="app.test" time="0.006000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [App Test / Wait for the app open]:
+
+  ReferenceError: id is not defined
+    at BaseTest.Wait for the app open (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/tests/app.test.js:7:13)
+    at Module.call (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:796:13)
+    at /Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/joycefernandes/Documents/Walmart/boilerplate-nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

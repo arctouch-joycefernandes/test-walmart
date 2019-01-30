@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="3">
+
+  <testsuite name="app.test"
+    errors="0" failures="1" hostname="" id="" package="app.test" skipped="1"
+    tests="3" time="69.36" timestamp="Mon, 28 Jan 2019 23:32:36 GMT">
+  
+    <testcase name="Load goole page" classname="app.test" time="7.262" assertions="0">
+    </testcase>
+  
+    <testcase name="wait for lage load" classname="app.test" time="62.10" assertions="1">  <failure message="Selector &#39;[name=&#39;q&#39;]&#39; was not visible after 60107 milliseconds. [[SELECTOR_NOT_FOUND]]">    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+    
+    <testcase
+      name="type search term" classname="app.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,82 @@
+{
+  "framework": "testarmada-magellan-nightwatch-plugin",
+  "executors": [
+    "testarmada-magellan-local-executor"
+  ],
+  "reporters": [
+    "testarmada-bloop"
+  ],
+  "strategy_bail": "testarmada-magellan-early-bail-strategy",
+  "profiles": {
+    "seleniumgrid": [
+      {
+        "browser": "chrome",
+        "resolution": "1280x960",
+        "executor": "seleniumgrid"
+      }
+    ],
+    "all": [
+      {
+        "browser": "chrome_latest_Windows_10_Desktop",
+        "resolution": "1280x960"
+      },
+      {
+        "browser": "chrome_latest_OS_X_10_12_Desktop",
+        "resolution": "1280x960"
+      },
+      {
+        "browser": "firefox_latest_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "firefox_latest_OS_X_10_12_Desktop"
+      },
+      {
+        "browser": "firefox_beta_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_11_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_10_Windows_2012_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_9_Windows_2008_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_8_Windows_2008_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "microsoftedge_15_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "safari_10_OS_X_10_12_Desktop"
+      },
+      {
+        "browser": "safari_9_OS_X_10_11_Desktop"
+      },
+      {
+        "browser": "safari_7_OS_X_10_9_Desktop"
+      }
+    ],
+    "appium-ios-app": [
+      {
+        "browser": "iphone_10_0_iOS_iPhone_7_Simulator",
+        "orientation": "portrait",
+        "appium": {
+          "app": "sauce-storage:Walmart_app.zip",
+          "appiumVersion": "1.6.4",
+          "automationName": "xcuitest",
+          "sendKeyStrategy": "setValue",
+          "waitForAppScript": "true"
+        }
+      }
+    ]
+  }
+}
